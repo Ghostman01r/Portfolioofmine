@@ -350,7 +350,7 @@
                 <!-- 2. NAV UPDATED -->
                 <nav class="flex space-x-6 border-b-[1px] border-solid border-orange-power pb-2 mb-4">
                     <!-- Nav links UPDATED -->
-                    <a href="home.html" class="font-semibold text-orange-power/70 hover:text-orange-power animate-on-load load-stage-20 nav-link">HOME</a>
+                    <a href="index.html" class="font-semibold text-orange-power/70 hover:text-orange-power animate-on-load load-stage-20 nav-link">HOME</a>
                     <a href="about.html" class="font-semibold text-orange-power/70 hover:text-orange-power animate-on-load load-stage-21 nav-link">ABOUT</a>
                     <a href="cv.html" class="font-semibold text-orange-power animate-on-load load-stage-22 nav-link">CV</a> <!-- Active -->
                 </nav>
@@ -473,7 +473,7 @@
                     });
                 }
 
-                // --- 3. Page Exit Animation Logic (UPDATED for 'home.html') ---
+                // --- 3. Page Exit Animation Logic (UPDATED for 'index.html') ---
                 const allNavLinks = document.querySelectorAll('.nav-link');
                 const header = document.querySelector('header');
                 const aside = document.querySelector('aside');
@@ -485,7 +485,7 @@
                         const destination = e.currentTarget.href;
                         
                         // We compare the 'pathname'
-                        const defaultPage = 'home.html';
+                        const defaultPage = 'index.html';
                         const currentPath = window.location.pathname.split('/').pop() || defaultPage;
                         const destinationPath = new URL(destination).pathname.split('/').pop() || defaultPage;
                         
@@ -519,4 +519,5 @@
         };
     </script>
 </body>
+
 </html>
